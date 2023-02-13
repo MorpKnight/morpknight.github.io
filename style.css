@@ -1,12 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
+:root {
+    --semiblack: #212121;
+}
+
 body {
+    font-family: 'Lato', sans-serif;
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 }
 
 .navbar {
-    background-color: #212121;
+    background-color: var(--semiblack);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 0 20px;
     position: fixed;
@@ -24,23 +29,22 @@ body {
     float: right;
 }
 
-.navbar ul li {
+.navbar li {
     float: left;
 }
 
-.navbar ul li a {
+.navbar a {
     display: inline-block;
     padding: 20px 20px;
-    font-family: 'Lato', sans-serif;
     text-decoration: none;
     color: #fff;
 }
 
-.navbar ul li a:hover {
+.navbar a:hover {
     color: grey;
 }
 
-.navbar ul li a::after{
+.navbar a::after{
     position: absolute;
     content: "";
     top: 100%;
@@ -53,34 +57,30 @@ body {
     transition: transform 0.5s;
 }
 
-.navbar ul li a:hover::after{
+.navbar a:hover::after{
     transform: scaleX(1);
     transform-origin: left;
 }
 
 .navbar h2 {
-    font-family: 'Lato', sans-serif;
-    color: #fff;
     display: inline-block;
     font-size: 20px;
+    color: white;
 }
 
-#about {
-    padding-top: 100px;
+.about {
     text-align: center;
 }
 
-#about h2 {
+.about h2 {
     padding-top: 100px;
-    font-family: 'Lato', sans-serif;
     font-size: 35px;
-    color: #fff;
+    color: white;
 }
 
-#about p {
-    font-family: 'Lato', sans-serif;
+.about p {
     font-size: 20px;
-    color: #fff;
+    color: white;
 }
 
 .rgb-shift {
@@ -90,49 +90,63 @@ body {
 
 @keyframes rgb-shift {
     0% {
-        color: white;
+        color: #ff0000;
     }
     25% {
-        color: #CDF0EA;
+        color: #ffff00;
     }
     50% {
-        color: #F6C6EA;
+        color: #00ff00;
     }
     75% {
-        color: #C490E4;
+        color: #00ffff;
     }
     100% {
-        color: white;
+        color: #0000ff;
     }
 }
 
+.skills-container {
+    font-family: 'Lato', sans-serif;
+    display: inline;
+    justify-content: center;
+}
 
+.skills-container h2 {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 100px;
+}
 
-#skills {
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
 }
 
-#skills h2 {
-    padding-top: 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 35px;
+.skill h3 {
     color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
 }
 
-.skills-card {
-    display: flex;
-    flex-direction: column;
+.showcase-skill {
+    display: inline;
+    justify-content: center;
+}
+
+.skill-card {
+    display: inline-block;
     justify-content: center;
     align-items: center;
     padding: 20px;
-}
-
-.card {
-    width: 175px;
-    height: 250px;
+    width: 120px;
+    height: 160px;
     background: #07182E;
     position: relative;
-    display: grid;
     place-content: center;
     place-items: center;
     overflow: hidden;
@@ -141,65 +155,36 @@ body {
     z-index: 1;
 }
 
-.card::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-    height: 130%;
-    animation: rotBGimg 3s linear infinite;
-    transition: all 0.2s linear;
-    z-index: -1;
-}
-
-@keyframes rotBGimg {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-  
-.card::after {
-    content: '';
-    position: absolute;
-    background: #07182E;
-    inset: 5px;
-    border-radius: 15px;
-    z-index: -1;
-}  
-
-.row1, .row2, .row3 {
-    display: flex;
-    justify-content: center;
-}
-
-.card img {
+.skill-card img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     transition: 0.5s;
 }
 
-.card h3 {
+.skill-card p {
     color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     padding-top: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 
-#projects {
+.invert img {
+    filter: invert(1);
+}
+
+.projects {
+    display: inline;
     text-align: center;
+    justify-content: center;
 }
 
-#projects h2 {
-    padding-top: 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 35px;
+.projects h2 {
     color: #fff;
+    font-size: 35px;
+    padding-top: 100px;
 }
 
 .project-card {
@@ -228,7 +213,6 @@ body {
 
 .project-card h3 {
     color: #fff;
-    font-family: 'Lato', sans-serif;
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
@@ -236,21 +220,21 @@ body {
 
 .project-card p {
     color: #fff;
-    font-family: 'Lato', sans-serif;
     font-size: 15px;
     text-align: center;
     padding-top: 10px;
 }
 
-#contact {
+.contact {
+    display: inline;
     text-align: center;
+    justify-content: center;
 }
 
-#contact h2 {
-    padding-top: 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 35px;
+.contact h2 {
     color: #fff;
+    font-size: 35px;
+    padding-top: 100px;
 }
 
 .contact-card {
@@ -276,7 +260,6 @@ body {
 
 .right-side h3 {
     color: #fff;
-    font-family: 'Lato', sans-serif;
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
@@ -296,7 +279,6 @@ body {
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
-    font-family: 'Lato', sans-serif;
     font-size: 15px;
     color: #fff;
     background: #07182E;
@@ -304,7 +286,6 @@ body {
 
 .right-side button {
     cursor: pointer;
-    font-family: 'Lato', sans-serif;
     font-size: 15px;
     background: #07182E;
     color: white;
@@ -373,7 +354,6 @@ body {
 
 .left-side h3 {
     color: #fff;
-    font-family: 'Lato', sans-serif;
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
@@ -396,7 +376,6 @@ body {
 
 .info p {
     color: #fff;
-    font-family: 'Lato', sans-serif;
     font-size: 15px;
     text-align: center;
     padding-top: 10px;
@@ -404,7 +383,6 @@ body {
 
 .info a {
     color: #fff;
-    font-family: 'Lato', sans-serif;
     font-size: 15px;
     text-align: center;
     padding-top: 10px;
