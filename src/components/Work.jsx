@@ -3,6 +3,13 @@ import WorkItem from "./WorkItem";
 
 const data = [
   {
+    year: 2024,
+    title: "Dunno what gonna happen this year",
+    duration: "🧐🧐🧐🧐",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisi lorem, rutrum eget efficitur quis, sollicitudin eu tortor. Aenean ex est, bibendum vitae eros eu, tempus consectetur erat. Aenean congue pulvinar facilisis. Proin et ex sit amet dui commodo tincidunt. Aenean convallis volutpat tortor, non dictum massa elementum at. Fusce imperdiet interdum ipsum, sed posuere lectus ultrices quis. Maecenas malesuada tortor id vehicula posuere. In est sapien, blandit quis sem vitae, rutrum dignissim arcu. Donec velit enim, placerat ut lectus id, molestie vestibulum neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque pharetra consectetur erat et mollis. Aliquam erat volutpat.",
+  },
+  {
     year: 2023,
     title: "Digital Laboratory Assistant of Electrical Engineering Department",
     duration: "August 2023 - Present",
