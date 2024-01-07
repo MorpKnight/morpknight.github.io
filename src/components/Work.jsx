@@ -1,5 +1,5 @@
 import React from "react";
-import WorkItem from "./WorkItem";
+import WorkData from "../data/workData";
 
 const data = [
   {
@@ -44,7 +44,7 @@ const Work = () => {
         Work & Education
       </h1>
       {data.map((item, idx) => (
-        <WorkItem
+        <WorkData
           key={idx}
           year={item.year}
           title={item.title}

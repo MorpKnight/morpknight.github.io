@@ -6,7 +6,7 @@ const Contact = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-blue-900">
         Contact
       </h1>
-      <form action="" method="POST" encType="multipart/form-data">
+      <form action="https://formcarry.com/s/9kPHCBPmbKF" method="POST" encType="multipart/form-data">
         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col">
             <label className="uppercase text-sm py-2" htmlFor="">
@@ -59,7 +59,7 @@ const Contact = () => {
             rows="10"
           ></textarea>
         </div>
-        <button className='bg-blue-900 text-gray-100 mt-4 w-full p-4 rounded-lg'>Send Message</button>
+        <button className='bg-blue-900 text-gray-100 mt-4 w-full p-4 rounded-lg' type="submit">Send Message</button>
       </form>
     </div>
   );
