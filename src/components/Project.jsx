@@ -59,6 +59,13 @@ const data = [
     tech: "C",
     affiliate: "Basic Programming",
     link: "https://github.com/MorpKnight/Proyek-Akhir-ProgDas"
+  },
+  {
+    name: "1944",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.",
+    tech: "Java",
+    affiliate: "Final Exam for Object Oriented Programming",
+    link: "https://github.com/den-dimas/1944"
   }
 ];
 
