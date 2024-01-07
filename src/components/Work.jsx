@@ -3,39 +3,39 @@ import WorkItem from "./WorkItem";
 
 const data = [
   {
-    year: 2020,
-    title: "Software Engineer",
-    duration: "May 2020 - Present",
+    year: 2023,
+    title: "Digital Laboratory Assistant of Electrical Engineering Department",
+    duration: "August 2023 - Present",
     details:
-      "Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      "The Digital Laboratory (Digilab) is a lab that is responsible for practicum for students of the Department of Electrical Engineering, which includes courses: Basic Programming, Basic Digital Systems, Advanced Programming, Basic Computing, Digital System Design, Physical Cyber Systems, and IoT",
+  },
+  {
+    year: 2023,
+    title: "Staff of Project EXERCISE 2023",
+    duration: "January 2023 - Present",
+    details:
+      "EXERCISE is a professional organization operating in the IT sector. There, I was a staff member of the Project Technical Division who was responsible for carrying out projects assigned to both external and internal parties. During the management period, a total of 3 projects have been carried out, 2 of which have been completed",
+  },
+  {
+    year: 2022,
+    title: "Computer Engineering Student - Universitas Indonesia",
+    duration: "July 2022 - Present",
+    details: "",
   },
   {
     year: 2019,
-    title: "Software Engineer",
-    duration: "May 2020 - Present",
-    details:
-      "Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
-  },
-  {
-    year: 2018,
-    title: "Software Engineer",
-    duration: "May 2020 - Present",
-    details:
-      "Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
-  },
-  {
-    year: 2017,
-    title: "Software Engineer",
-    duration: "May 2020 - Present",
-    details:
-      "Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+    title: "SMAN 2 Kota Bekasi",
+    duration: "July 2019 - June 2022",
+    details: "",
   },
 ];
 
 const Work = () => {
   return (
     <div id="Work" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-      <h1 className="text-4xl font-bold text-center text-blue-900">Work</h1>
+      <h1 className="text-4xl font-bold text-center text-blue-900 pb-4">
+        Work & Education
+      </h1>
       {data.map((item, idx) => (
         <WorkItem
           key={idx}

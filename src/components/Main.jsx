@@ -2,6 +2,25 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import * as fa from "react-icons/fa";
 
+const data = [
+  {
+    link: "https://github.com/MorpKnight",
+    icon: <fa.FaGithub size={25} />,
+  },
+  {
+    link: "https://www.linkedin.com/in/giovan-christoffel-sihombing-a1b1a4211/",
+    icon: <fa.FaLinkedin size={25} />,
+  },
+  {
+    link: "https://www.instagram.com/giovanchristoffel/",
+    icon: <fa.FaInstagram size={25} />,
+  },
+  {
+    link: "https://twitter.com/",
+    icon: <fa.FaTwitter size={25} />,
+  },
+]
+
 const Main = () => {
   return (
     <div id="Main">
@@ -18,11 +37,11 @@ const Main = () => {
             I'm a{" "}
             <TypeAnimation
               sequence={[
-                "Web Developer",
-                2000,
                 "Programmer",
                 2000,
-                "Designer",
+                "Backend Developer",
+                2000,
+                "Frontend Developer",
                 2000,
               ]}
               wrapper="h2"
@@ -32,10 +51,12 @@ const Main = () => {
             />
           </h2>
           <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <fa.FaGithub size={25} />
-            <fa.FaTwitter size={25} />
-            <fa.FaLinkedin size={25} />
-            <fa.FaInstagram size={25} />
+            {data.map((item) => (
+              <a href={item.link} target="_blank">
+                {item.icon}
+              </a>
+            )
+            )}
           </div>
         </div>
       </div>
