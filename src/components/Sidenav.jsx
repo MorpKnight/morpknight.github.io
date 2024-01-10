@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
-import { GrProjects } from "react-icons/gr";
+import { GrProjects, GrTechnology } from "react-icons/gr";
 import { MdOutlineWorkspaces } from "react-icons/md";
 import { IoIosContact, IoMdDocument } from "react-icons/io";
 import NavigationData from "../data/navigationData";
@@ -16,6 +16,11 @@ const data = [
     name: "Work",
     icon: <MdOutlineWorkspaces size={20} />,
     linkTo: "#Work",
+  },
+  {
+    name: "Tech & Skill",
+    icon: <GrTechnology size={20} />,
+    linkTo: "#TechSkill",
   },
   {
     name: "Project",
